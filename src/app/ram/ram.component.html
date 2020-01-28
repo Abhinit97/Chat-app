@@ -1,0 +1,8 @@
+<h1>Ram Component</h1>
+<h3>
+    Enter Message : <input type="text" #mi>
+    <button (click)="sendMessage(mi.value);mi.value=''">SEND MESSAGE</button>
+</h3>
+<div>
+    <p *ngFor="let msg of messages">{{ msg }}</p>
+</div>
